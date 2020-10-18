@@ -13,6 +13,8 @@
 		18BD7C2E253C2445009D48B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BD7C2C253C2444009D48B5 /* Main.storyboard */; };
 		18BD7C30253C244C009D48B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BD7C2F253C244C009D48B5 /* Assets.xcassets */; };
 		18BD7C33253C244C009D48B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BD7C31253C244C009D48B5 /* LaunchScreen.storyboard */; };
+		18BD7C3B253C25F5009D48B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18BD7C3A253C25F5009D48B5 /* GoogleService-Info.plist */; };
+		A2B6434E371761FD7F4395E5 /* Pods_StudyFireBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3BFE2C1F4EA578BD93CB47 /* Pods_StudyFireBase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		18BD7C2F253C244C009D48B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18BD7C32253C244C009D48B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18BD7C34253C244C009D48B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BD7C3A253C25F5009D48B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A3BFE2C1F4EA578BD93CB47 /* Pods_StudyFireBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyFireBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA7BABDC1FE724AE00A1800 /* Pods-StudyFireBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyFireBase.release.xcconfig"; path = "Target Support Files/Pods-StudyFireBase/Pods-StudyFireBase.release.xcconfig"; sourceTree = "<group>"; };
+		F7AA1FCB02E62B2D61855343 /* Pods-StudyFireBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyFireBase.debug.xcconfig"; path = "Target Support Files/Pods-StudyFireBase/Pods-StudyFireBase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B6434E371761FD7F4395E5 /* Pods_StudyFireBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00D7AC258329A0F59E260CE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A3BFE2C1F4EA578BD93CB47 /* Pods_StudyFireBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		18BD7C1A253C2444009D48B5 = {
 			isa = PBXGroup;
 			children = (
 				18BD7C25253C2444009D48B5 /* StudyFireBase */,
 				18BD7C24253C2444009D48B5 /* Products */,
+				1D1CE3E80E32857F514F7443 /* Pods */,
+				00D7AC258329A0F59E260CE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +80,19 @@
 				18BD7C2F253C244C009D48B5 /* Assets.xcassets */,
 				18BD7C31253C244C009D48B5 /* LaunchScreen.storyboard */,
 				18BD7C34253C244C009D48B5 /* Info.plist */,
+				18BD7C3A253C25F5009D48B5 /* GoogleService-Info.plist */,
 			);
 			path = StudyFireBase;
+			sourceTree = "<group>";
+		};
+		1D1CE3E80E32857F514F7443 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7AA1FCB02E62B2D61855343 /* Pods-StudyFireBase.debug.xcconfig */,
+				EBA7BABDC1FE724AE00A1800 /* Pods-StudyFireBase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18BD7C37253C244C009D48B5 /* Build configuration list for PBXNativeTarget "StudyFireBase" */;
 			buildPhases = (
+				71B19308685E0DC1DE6350AA /* [CP] Check Pods Manifest.lock */,
 				18BD7C1F253C2444009D48B5 /* Sources */,
 				18BD7C20253C2444009D48B5 /* Frameworks */,
 				18BD7C21253C2444009D48B5 /* Resources */,
+				2729D389820FC5EB80BC342A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				18BD7C33253C244C009D48B5 /* LaunchScreen.storyboard in Resources */,
+				18BD7C3B253C25F5009D48B5 /* GoogleService-Info.plist in Resources */,
 				18BD7C30253C244C009D48B5 /* Assets.xcassets in Resources */,
 				18BD7C2E253C2445009D48B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2729D389820FC5EB80BC342A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudyFireBase/Pods-StudyFireBase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudyFireBase/Pods-StudyFireBase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StudyFireBase/Pods-StudyFireBase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71B19308685E0DC1DE6350AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StudyFireBase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18BD7C1F253C2444009D48B5 /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		18BD7C38253C244C009D48B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7AA1FCB02E62B2D61855343 /* Pods-StudyFireBase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +374,7 @@
 		};
 		18BD7C39253C244C009D48B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBA7BABDC1FE724AE00A1800 /* Pods-StudyFireBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
